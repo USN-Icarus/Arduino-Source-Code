@@ -28,3 +28,28 @@ void loop() {
   Serial.print("Motor pulse: ");
   Serial.println(motorPulse);
 }
+
+/*
+ * Values from computer
+ */
+ /*
+#include <Servo.h>
+
+Servo motor1;
+
+void setup() {
+  Serial.begin(9600);
+  Serial.setTimeout(50);
+  motor1.attach(7, 1000, 2000);
+}
+
+
+void loop() {
+  if (Serial.available()) {
+    int motorPulse = Serial.parseInt();
+    motor1.writeMicroseconds(motorPulse);
+    Serial.print("Motor pulse: ");
+    Serial.println(motorPulse);
+  }
+}
+*/
